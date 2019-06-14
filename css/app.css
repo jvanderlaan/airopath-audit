@@ -1,0 +1,27 @@
+header {
+
+}
+
+.btn-frame-close:hover {
+	background-color: #DA727E;
+}
+
+.btn-frame-expand:hover,
+.btn-frame-minimize:hover {
+	background-color: #4DB6AC;
+}
+
+.sidebar {
+	overflow-y: scroll;
+}
+
+.toolbar {
+/*	background-color: #263238;
+	background-image: none;*/
+	padding: 10px 5px 5px 5px;
+}
+
+.icon-margin-right {
+	margin-right: 5px;
+}
+

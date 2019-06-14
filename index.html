@@ -1,20 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+		<title>Audit Tool</title>
 
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <strong><script>document.write( process.versions.node)</script></strong>,
-    and Electron <strong><script>document.write( process.versions.electron )</script></strong>.
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/photon.css">
+		<link rel="stylesheet" href="css/app.css">
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+	</head>
+	<body style="user-select:none;">
+		<div class="window">
+			<header class="toolbar toolbar-header" style="-webkit-app-region:drag;">
+				<!-- <h1 class="title">Audit Tool</h1> -->
+				<div class="toolbar-actions">
+					<button class="btn btn-default btn-dropdown">
+						<icon class="icon icon-folder"></icon>
+					</button>
+					<div class="btn-group">
+						<button class="btn btn-default">Audit
+							<span class="icon icon-check icon-margin-right"></span>
+						</button>
+						<button class="btn btn-default">Review
+							<span class="icon icon-attention icon-margin-right"></span>
+						</button>
+						<button class="btn btn-default">Export
+							<span class="icon icon-export icon-margin-right"></span>
+						</button>
+					</div>
+						<button class="btn btn-default btn-frame-close pull-right">
+							<span class="icon icon-cancel"></span>
+						</button>
+						<button class="btn btn-default btn-frame-expand pull-right">
+							<span class="icon icon-popup"></span>
+						</button>
+						<button class="btn btn-default btn-frame-minimize pull-right">
+							<span class="icon icon-minus"></span>
+						</button>
+				</div>
+			</header>
+			<div class="window-content">
+				<div class="pane-group">
+					<div class="pane-sm sidebar">
+						<ul class="list-group">
+							<li class="list-group-header">
+								<input class="form-control" type="text" placeholder="Search for AP"></input>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+							<li class="list-group-item">
+								<strong>XXXX-XX-XXXXXX</strong>
+							</li>
+						</ul>
+					</div>
+					<div class="pane">
+						
+					</div>
+					<div class="pane">
+						
+					</div>
+				</div>
+			</div>
+			<footer class="toolbar toolbar-footer">
+				<h1 class="title">Pitter Patter</h1>
+			</footer>
+		</div>
+
+
+		<script>
+
+			require('./renderer.js')
+		</script>
+	</body>
 </html>
