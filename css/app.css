@@ -3,21 +3,14 @@ header {
 }
 
 .btn-frame-close:hover {
-	background-color: #DA727E;
+	background-color: #e15554;
 }
 
 .btn-frame-expand:hover,
 .btn-frame-minimize:hover {
-	background-color: #4DB6AC;
+	background-color: #d4e5ec;
 }
-
-.sidebar {
-	overflow-y: scroll;
-}
-
 .toolbar {
-/*	background-color: #263238;
-	background-image: none;*/
 	padding: 10px 5px 5px 5px;
 }
 
@@ -25,3 +18,161 @@ header {
 	margin-right: 5px;
 }
 
+.sidebar {
+	display: flex;
+	flex-direction: column;
+}
+
+.ap-search-bar {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.list-group {
+	overflow-y: auto;
+}
+
+.ap-audit-pane {
+/*	background-image: url("../img/subtle_dots.png");*/
+	padding: 20px;
+}
+
+.ap-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ap-header h3 {
+	margin-top: 10px;
+}
+
+.ap-identity {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.audit-form {
+
+}
+
+.audit-container {
+	display: flex;
+	align-items: center;
+}
+
+
+.audit-input {
+
+}
+
+.audit-textarea {
+	flex-grow: 2;
+}
+
+.audit-options {
+	font-size: 11px;
+}
+
+.audit-option {
+	padding: 2px;
+	border-radius: 2px;
+}
+
+.fail {
+	background-color: #e15554;
+}
+
+.btn-tall {
+	line-height: 0.5;
+	padding: 10px;
+	height: 60px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn-tall span.icon.icon-switch {
+	color: #fff;
+}
+
+.audit-button-container {
+	display: flex;
+	justify-content: center;
+}
+
+#image-pane {
+	overflow: hidden;
+	position: relative;
+}
+
+#zoom-area {
+	background-image: url("../img/ps_neutral.png");
+	overflow: hidden;
+}
+
+.panzoom img{
+	cursor: grab;
+	cursor: -webkit-grab;
+}
+
+.panzoom img:active{
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+}
+
+.img-buttons{
+	display: flex;
+	align-items: center;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background-color: #fff;
+	border-radius: 2px;
+	padding: 10px;
+}
+
+.img-buttons .btn,
+.img-buttons input {
+	margin-right: 10px;
+}
+
+.img-buttons .btn:nth-child(5) {
+	margin-right: 30px;
+}
+
+.img-buttons .btn:nth-child(9) {
+	margin-right: 0px;
+}
+
+.img-buttons .btn span.icon.icon-minus,
+.img-buttons .btn span.icon.icon-plus,
+.img-buttons .btn span.icon.icon-resize-full,
+.ap-header .btn span.icon.icon-left-open,
+.ap-header .btn span.icon.icon-right-open {
+	color: #fff;
+}
+
+.negative-margin-top-30 {
+	margin-top: -30px;
+}
+
+.padding-vertical-10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.sans-vertical-padding {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.sans-horizontal-padding {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+button:hover {
+	cursor: pointer;
+}

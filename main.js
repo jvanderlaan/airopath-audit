@@ -1,16 +1,19 @@
 // Modules
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu, MenuItem} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
+let mainMenu = Menu.buildFromTemplate( require('./mainMenu.js') )
+
 // Create a new BrowserWindow when `app` is ready
 function createWindow () {
 
   mainWindow = new BrowserWindow({
-    width: 1400, height: 800,
-    frame: false,
+    width: 1700, height: 945,
+    minWidth: 900, minHeight: 450,
+    // frame: false,
     webPreferences: { nodeIntegration: true }
   })
 
@@ -18,7 +21,9 @@ function createWindow () {
   mainWindow.loadFile('index.html')
 
   // Open DevTools - Remove for PRODUCTION!
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
+
+  Menu.setApplicationMenu(mainMenu)
 
   // Listen for window being closed
   mainWindow.on('closed',  () => {
