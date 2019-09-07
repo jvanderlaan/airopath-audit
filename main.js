@@ -11,9 +11,9 @@ let mainMenu = Menu.buildFromTemplate( require('./mainMenu.js') )
 function createWindow () {
 
   mainWindow = new BrowserWindow({
-    width: 1700, height: 945,
+    width: 1700, height: 1020,
     minWidth: 900, minHeight: 450,
-    // frame: false,
+    frame: false,
     webPreferences: { nodeIntegration: true }
   })
 
@@ -21,7 +21,7 @@ function createWindow () {
   mainWindow.loadFile('index.html')
 
   // Open DevTools - Remove for PRODUCTION!
-  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 
   Menu.setApplicationMenu(mainMenu)
 

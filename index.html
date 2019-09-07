@@ -13,33 +13,33 @@
 	</head>
 	<body>
 		<div class="window">
-<!-- 			<header class="toolbar toolbar-header">
+			<header class="toolbar toolbar-header">
 				<div class="toolbar-actions">
-					<button class="btn btn-default btn-dropdown" tabindex="-1">
+					<button class="btn btn-large btn-dropdown btn-frame-primary" tabindex="-1">
 						<icon class="icon icon-folder"></icon>
 					</button>
 					<div class="btn-group">
-						<button class="btn btn-default" tabindex="-1">Audit
+						<button class="btn btn-large btn-frame-primary" tabindex="-1">Audit
 							<span class="icon icon-check icon-margin-right"></span>
 						</button>
-						<button class="btn btn-default" tabindex="-1">Review
+						<button class="btn btn-large btn-frame-primary" tabindex="-1">Review
 							<span class="icon icon-attention icon-margin-right"></span>
 						</button>
-						<button class="btn btn-default" tabindex="-1">Export
+						<button class="btn btn-large btn-frame-primary" tabindex="-1">Export
 							<span class="icon icon-export icon-margin-right"></span>
 						</button>
 					</div>
-						<button class="btn btn-default btn-frame-close pull-right" tabindex="-1">
+						<button class="btn btn-large btn-frame-close pull-right" tabindex="-1">
 							<span class="icon icon-cancel"></span>
 						</button>
-						<button class="btn btn-default btn-frame-expand pull-right" tabindex="-1">
+						<button class="btn btn-large btn-frame-expand pull-right" tabindex="-1">
 							<span class="icon icon-popup"></span>
 						</button>
-						<button class="btn btn-default btn-frame-minimize pull-right" tabindex="-1">
+						<button class="btn btn-large btn-frame-minimize pull-right" tabindex="-1">
 							<span class="icon icon-minus"></span>
 						</button>
 				</div>
-			</header> -->
+			</header>
 			<div class="window-content">
 				<div class="pane-group">
 					<div class="pane-sm sidebar">
@@ -130,14 +130,14 @@
 					<div class="pane ap-audit-pane">
 
 						<div class="ap-header">
-							<button class="btn btn-large btn-primary"><span class="icon icon-left-open"></span></button>
+							<button class="btn btn-large btn-default"><span class="icon icon-left-open"></span></button>
 							<div class="ap-identity">
 								<h3>XXXX-XX-XXXXXX</h3>
 								<span>Model</span> -
 								<span>Antenna</span> -
 								<span>Elevation</span>
 							</div>
-							<button class="btn btn-large btn-primary"><span class="icon icon-right-open"></span></button>
+							<button class="btn btn-large btn-default"><span class="icon icon-right-open"></span></button>
 						</div>
 
 						<form class="audit-form">
@@ -145,243 +145,226 @@
 								<div class="row">
 									<div class="col">
 
-										<div class="card">
-											<div class="card-header">
-												<span>Equipment</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Broadcast</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Elevation</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Location</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+										</div>										
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
+											</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-									</div>	
-									<div class="col">
+									</div>
 
-										<div class="card">
-											<div class="card-header">
-												<span>Safety Wire</span>
+									<div class="col">
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Backboard</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Cabling</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
-										<div class="card">
-											<div class="card-header">
-												<span>Obstruction</span>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
 											</div>
-											<div class="card-content">
-												<div class="audit-container">
-													<div class="audit-input">
-														<input type="number" name="backplate" min="1" max="5" step="1">
-													</div>
-													<div class="audit-options">
-														<ol>
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-													<div class="audit-options">
-														<ol start="4">
-															<li class="audit-option">Correct</li>
-															<li class="audit-option">AP Model</li>
-															<li class="audit-option">Antenna Model</li>
-														</ol>
-													</div>
-												</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
 											</div>
 										</div>
+										<span class="audit-category">Equipment</span>
+										<div class="audit-container">
+											<div class="audit-input">
+												<input type="number" name="backplate" min="1" max="5" step="1">
+											</div>
+											<div class="audit-options">
+												<ol>
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+											<div class="audit-options">
+												<ol start="4">
+													<li class="audit-option">Correct</li>
+													<li class="audit-option">AP Model</li>
+													<li class="audit-option">Antenna Model</li>
+												</ol>
+											</div>
+										</div>										
 									</div>	
 
 								</div>
 
-								<div class="row negative-margin-top-30">
+								<div class="row">
 									<div class="col">
-										<div class="card">
-											<div class="card-header">
-												<span>Notes</span>
-											</div>
-											<div class="card-content">
-												<div class="audit-container padding-vertical-10">
-													<button class="btn btn-large btn-primary btn-tall"><span class="icon icon-switch"></span><br>Move AP</button>
-													<div class="audit-textarea">
-														<textarea></textarea>
-													</div>
-												</div>
-											</div>
+										<span class="audit-category">Notes</span>
+										<div class="audit-textarea">
+											<textarea></textarea>
 										</div>
 									</div>
 								</div>
 
-								<div class="row negative-margin-top-30">
+								<div class="row">
 									<div class="col">
 										<div class="audit-button-container">
-											<button class="btn btn-large btn-positive">Submit Access Point</button>
+											<button class="btn btn-large btn-positive">Save</button>
 										</div>
 									</div>
 								</div>
@@ -389,29 +372,67 @@
 						</form>
 
 					</div>
-					<div class="pane" id="image-pane">
-						<div id="zoom-area">
-							<div class="panzoom">
-								<img src="img/A1 - blocks.png">
-							</div>
-							<div class="img-buttons">
-								<button class="btn btn-warning" tabindex="-1">1</button>
-								<button class="btn btn-warning" tabindex="-1">2</button>
-								<button class="btn btn-warning" tabindex="-1">3</button>
-								<button class="btn btn-warning" tabindex="-1">4</button>
-								<button class="btn btn-warning" tabindex="-1">5</button>
-								<button class="btn btn-primary zoom-out" tabindex="-1"><span class="icon icon-minus"></span></button>
-								<input type="range" class="zoom-range" name="" tabindex="-1" disabled>
-								<button class="btn btn-primary zoom-in" tabindex="-1"><span class="icon icon-plus"></span></button>
-								<button class="btn btn-negative reset" tabindex="-1"><span class="icon icon-resize-full"></span></button>
+					<div class="pane" id="tab-pane"> 
+
+						<div class="tab-group">
+							<div class="tab-item active">Rules/Tolerances</div>
+							<div class="tab-item">Details</div>
+							<div class="tab-item">Layouts</div>
+						</div>
+
+						<div id="rules-tab">
+							<div class="rules-container">
+								<span id="rules-message">Select a category to view the situations in which a WAP should be called out.</span>
+								<div class="rules-button-group">
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+								</div>
+								<div class="rules-button-group">
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+								</div>
 							</div>
 						</div>
+
+						<!-- <div id="image-tab">
+							<div id="zoom-area">
+								<div class="panzoom">
+									<img src="img/A1 - blocks.png">
+								</div>
+								<div class="img-buttons">
+									<button class="btn btn-warning" tabindex="-1">1</button>
+									<button class="btn btn-warning" tabindex="-1">2</button>
+									<button class="btn btn-warning" tabindex="-1">3</button>
+									<button class="btn btn-warning" tabindex="-1">4</button>
+									<button class="btn btn-warning" tabindex="-1">5</button>
+									<button class="btn btn-primary zoom-out" tabindex="-1"><span class="icon icon-minus"></span></button>
+									<input type="range" class="zoom-range" name="" tabindex="-1" disabled>
+									<button class="btn btn-primary zoom-in" tabindex="-1"><span class="icon icon-plus"></span></button>
+									<button class="btn btn-negative reset" tabindex="-1"><span class="icon icon-resize-full"></span></button>
+								</div>
+							</div>
+						</div> -->
+
+						<div id="results-tab">
+							
+						</div>
+
 					</div>
 				</div>
 			</div>
-<!-- 			<footer class="toolbar toolbar-footer">
-				<h1 class="title">Pitter patter let's get at 'er!</h1>
-			</footer> -->
+			<footer class="toolbar toolbar-footer">
+				<h1 class="title">One who has many cheeses is one who has many friends.</h1>
+				<!-- <h1 class="title">If opportunity doesn't knock, install a doorbell.</h1> -->
+				<!-- <h1 class="title">When life gets you down, order a pizza.</h1> -->
+				<!-- <h1 class="title"></h1> -->
+				<!-- <h1 class="title"></h1> -->
+			</footer>
 		</div>
 
 
