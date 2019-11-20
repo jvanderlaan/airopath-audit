@@ -46,85 +46,8 @@
 						<div class="ap-search-bar">
 							<input class="form-control" type="text" placeholder="Search for AP" tabindex="-1"></input>
 						</div>
-						<ul class="list-group">
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
-							<li class="list-group-item">
-								<strong>XXXX-XX-XXXXXX</strong>
-							</li>
+						<ul class="list-group" id="wap-list">
+							<!-- filled from renderer.js -->
 						</ul>
 					</div>
 					<div class="pane ap-audit-pane">
@@ -132,10 +55,10 @@
 						<div class="ap-header">
 							<button class="btn btn-large btn-default"><span class="icon icon-left-open"></span></button>
 							<div class="ap-identity">
-								<h3>XXXX-XX-XXXXXX</h3>
-								<span>Model</span> -
-								<span>Antenna</span> -
-								<span>Elevation</span>
+								<h3 id="ap-name">XXXX-XX-XXXXXX</h3>
+								<span id="ap-model">Model</span> -
+								<span id="antenna-model">Antenna</span> -
+								<span id="mount-elevation">Elevation</span>
 							</div>
 							<button class="btn btn-large btn-default"><span class="icon icon-right-open"></span></button>
 						</div>
@@ -145,10 +68,10 @@
 								<div class="row">
 									<div class="col">
 
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Backboard</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="backboard" type="number" name="backboard" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -165,10 +88,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Broadcast</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="broadcast" type="number" name="broadcast" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -185,10 +108,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Cabling</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="cabling" type="number" name="cabling" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -205,10 +128,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Elevation</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="elevation" type="number" name="elevation" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -228,7 +151,7 @@
 										<span class="audit-category">Equipment</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="equipment" type="number" name="equipment" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -248,10 +171,10 @@
 									</div>
 
 									<div class="col">
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Label</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="label" type="number" name="label" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -268,10 +191,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Location</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="location" type="number" name="location" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -288,10 +211,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Material</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="material" type="number" name="material" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -308,10 +231,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Obstruction</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="obstruction" type="number" name="obstruction" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -328,10 +251,10 @@
 												</ol>
 											</div>
 										</div>
-										<span class="audit-category">Equipment</span>
+										<span class="audit-category">Safety Cables</span>
 										<div class="audit-container">
 											<div class="audit-input">
-												<input type="number" name="backplate" min="1" max="5" step="1">
+												<input id="safety-cable" type="number" name="safety-cable" min="1" max="5" step="1">
 											</div>
 											<div class="audit-options">
 												<ol>
@@ -356,7 +279,7 @@
 									<div class="col">
 										<span class="audit-category">Notes</span>
 										<div class="audit-textarea">
-											<textarea></textarea>
+											<textarea id="notes"></textarea>
 										</div>
 									</div>
 								</div>
@@ -364,7 +287,7 @@
 								<div class="row">
 									<div class="col">
 										<div class="audit-button-container">
-											<button class="btn btn-large btn-positive">Save</button>
+											<button class="btn btn-large btn-positive" id="test">Save</button>
 										</div>
 									</div>
 								</div>
@@ -380,27 +303,15 @@
 							<div class="tab-item">Layouts</div>
 						</div>
 
-						<div id="rules-tab">
-							<div class="rules-container">
-								<span id="rules-message">Select a category to view the situations in which a WAP should be called out.</span>
-								<div class="rules-button-group">
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-								</div>
-								<div class="rules-button-group">
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
-									<button class="btn btn-large btn-default rules-btn" tabindex="-1">Elevation</button>
+						<div class="rules-tab">
+							<div class="tab-content">
+								<div id="ap-type">
+									
 								</div>
 							</div>
 						</div>
 
-						<!-- <div id="image-tab">
+<!-- 						<div id="image-tab">
 							<div id="zoom-area">
 								<div class="panzoom">
 									<img src="img/A1 - blocks.png">
@@ -435,7 +346,9 @@
 			</footer>
 		</div>
 
-
+		<script>
+			process.log("test");
+		</script>
 		<script>
 			window.nodeRequire = require;
 			delete window.require;

@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-	// $('.panzoom').panzoom();
-
+	//Panzoom Instantiation
 	(function() {
 		var $zoomArea = $('#zoom-area');
 		$zoomArea.find('.panzoom').panzoom({
@@ -15,5 +14,4 @@ $(document).ready(function() {
 	$('.panzoom').panzoom("option", {
 		linearZoom: true
 	});
-
 });

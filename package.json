@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "watch": "nodemon --exec 'electron .'",
-    "reset": "git reset --hard"
+    "reset": "git reset --hard",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": "https://github.com/jvanderlaan/airopath-audit",
   "keywords": [
@@ -17,7 +18,12 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^5.0.3",
+    "electron-builder": "^21.2.0",
+    "electron-rebuild": "^1.8.6",
     "nodemon": "^1.18.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-gyp": "^6.0.0",
+    "sqlite3": "^4.1.0"
+  }
 }
